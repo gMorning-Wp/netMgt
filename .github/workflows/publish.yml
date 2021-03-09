@@ -20,7 +20,7 @@ jobs:
         # 使用action库  actions/setup-node安装node
         uses: actions/setup-node@v1
         with:
-          node-version: 14.0.0
+          node-version: 14.16.0
 
       # 安装依赖
       - name: 安装依赖
@@ -32,6 +32,7 @@ jobs:
 
       # 上传阿里云
       - name: 发布到阿里云
+      # 在github提供的虚拟机中使用第三方库
         uses: easingthemes/ssh-deploy@v2.1.1
         env:
           # 私钥
@@ -41,8 +42,8 @@ jobs:
           # 源目录
           SOURCE: "dist"
           # 服务器ip：换成你的服务器IP
-          REMOTE_HOST: "47.98.252.43"
+          REMOTE_HOST: "47.118.76.34"
           # 用户
           REMOTE_USER: "root"
           # 目标地址
-          TARGET: "/root/vue-in-action"
+          TARGET: "/root/netMgt"
