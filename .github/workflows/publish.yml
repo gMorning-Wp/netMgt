@@ -43,8 +43,9 @@ jobs:
           SOURCE: "dist"
           # 服务器ip：换成你的服务器IP
           REMOTE_HOST: "47.118.76.34"
-          PASSWORD: root@123
           # 用户
           REMOTE_USER: "root"
+          # 密码
+          PASSWORD: "root@123"
           # 目标地址
           TARGET: "/root/netMgt"
