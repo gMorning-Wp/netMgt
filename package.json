@@ -1,0 +1,24 @@
+{
+  "name": "netMgt",
+  "version": "0.0.0",
+  "scripts": {
+    "serve": "cross-env NODE_ENV=development vite",
+    "build": "cross-env NODE_ENV=production vite build"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "element-plus": "^1.0.2-beta.33",
+    "mockjs": "^1.1.0",
+    "vue": "^3.0.5",
+    "vue-router": "^4.0.4",
+    "vuex": "^4.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.1.5",
+    "@vue/compiler-sfc": "^3.0.5",
+    "cross-env": "^7.0.3",
+    "sass": "^1.32.8",
+    "vite": "^2.0.5",
+    "vite-plugin-mock": "^2.2.0"
+  }
+}
