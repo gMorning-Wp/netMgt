@@ -1,3 +1,4 @@
+###### *建议一人开发也要遵守此流程规范
 # 新建一个分支，与指定的远程分支建立追踪关系 
 
 1. $ git branch --track [branch] origin/[remote-branch] 或者 git checkout -b [branch] origin/[remote-branch]
