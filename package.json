@@ -7,7 +7,6 @@
     "lint": "eslint --fix \"src/**/*.{js,vue}\"",
     "precommit":"lint-staged"
   },
-  //pre-commit 的eslint的检测
   "husky":{
     "hooks":{
       "pre-commit":"npm run precommit"
