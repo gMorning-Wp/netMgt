@@ -4,7 +4,12 @@
   "scripts": {
     "serve": "cross-env NODE_ENV=development vite",
     "build": "cross-env NODE_ENV=production vite build",
-    "lint": "eslint --fix \"src/**/*.{js,vue}\"",
+    "lint": "eslint --fix \"src/**/*.{js,vue}\""
+  },
+  "husky":{
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "lint-staged": {
     "src/**/*.{js,vue}": [
