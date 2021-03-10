@@ -4,12 +4,13 @@
   "scripts": {
     "serve": "cross-env NODE_ENV=development vite",
     "build": "cross-env NODE_ENV=production vite build",
-    "lint": "eslint --fix \"src/**/*.{js,vue}\""
+    "lint": "eslint --fix \"src/**/*.{js,vue}\"",
+    "precommit":"lint-staged"
   },
   //pre-commit 的eslint的检测
   "husky":{
     "hooks":{
-      "pre-commit":"lint-staged"
+      "pre-commit":"npm run precommit"
     }
   },
   "lint-staged":{
