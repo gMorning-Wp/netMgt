@@ -4,9 +4,10 @@
   "scripts": {
     "serve": "cross-env NODE_ENV=development vite",
     "build": "cross-env NODE_ENV=production vite build",
-    "lint": "eslint --fix \"src/**/*.{js,vue}\""
+    "lint": "eslint --fix \"src/**/*.{js,vue}\"",
+    "prepare": "husky install"
   },
-  "husky":{
+  "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }
@@ -35,7 +36,7 @@
     "eslint": "^6.7.2",
     "eslint-plugin-prettier": "^3.1.3",
     "eslint-plugin-vue": "^7.0.0-0",
-    "husky": "^4.0.0",
+    "husky": "^5.1.3",
     "lint-staged": "^10.5.4",
     "postcss": "^8.2.8",
     "prettier": "^1.19.1",
