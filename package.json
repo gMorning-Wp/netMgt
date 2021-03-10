@@ -8,8 +8,8 @@
     "precommit": "lint-staged"
   },
   "lint-staged": {
-    "*.js": [
-      "eslint --fix",
+    "src/**/*.{js,vue}": [
+      "eslint",
       "git add"
     ]
   },
