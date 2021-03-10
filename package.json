@@ -6,6 +6,11 @@
     "build": "cross-env NODE_ENV=production vite build",
     "lint": "eslint --fix \"src/**/*.{js,vue}\""
   },
+  "husky":{
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "lint-staged": {
     "src/**/*.{js,vue}": [
       "eslint --fix",
