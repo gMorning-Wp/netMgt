@@ -1,12 +1,12 @@
 export default [
   {
-    url: "/api/getUser",
-    method: "get",
-    response: () => {
+    url: '/api/getUser',
+    method: 'get',
+    response: ({ body }) => {
       return {
         code: 0,
-        message: "ok",
-        data: ["tom"],
+        message: 'ok',
+        data: ['tom'],
       };
     },
   },
