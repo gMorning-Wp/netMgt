@@ -1,4 +1,4 @@
-import { defineConfig } from "vite";
+// import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import { viteMockServe } from "vite-plugin-mock";
 import path from "path";
@@ -10,7 +10,7 @@ export default ({ command }) => {
   return {
     css: {},
     esbuild: {},
-    resolve:{
+    resolve: {
       alias: {
         "@": path.resolve(__dirname, "src"),
         comps: path.resolve(__dirname, "src/components"),
@@ -27,9 +27,9 @@ export default ({ command }) => {
         // close support .ts file
         supportTs: false,
         // default
-        mockPath: 'mock',
-        localEnabled: command === 'serve',
-        prodEnabled: command !== 'serve' && prodMock,
+        mockPath: "mock",
+        localEnabled: command === "serve",
+        prodEnabled: command !== "serve" && prodMock,
         injectCode: `
           import { setupProdMockServer } from './mockProdServer';
           setupProdMockServer();
