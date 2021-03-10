@@ -5,15 +5,15 @@
     "serve": "cross-env NODE_ENV=development vite",
     "build": "cross-env NODE_ENV=production vite build",
     "lint": "eslint --fix \"src/**/*.{js,vue}\"",
-    "precommit":"lint-staged"
+    "precommit": "lint-staged"
   },
-  "husky":{
-    "hooks":{
-      "pre-commit":"npm run precommit"
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run precommit"
     }
   },
-  "lint-staged":{
-    "src/**/*.{js,vue}":[
+  "lint-staged": {
+    "src/**/*.{js,vue}": [
       "eslint --fix",
       "git add"
     ]
