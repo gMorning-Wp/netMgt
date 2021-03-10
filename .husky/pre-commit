@@ -1,1 +1,3 @@
+
+echo 'dd'
 npm run precommit
