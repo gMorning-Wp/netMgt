@@ -9,7 +9,8 @@
     "precommit":"lint-staged"
   },
   "lint-staged": {
-    "src/**/*.{js,vue}": [
+    "src/**/*.{js,vue,css,json}": [
+      "prettier --write",
       "eslint --fix",
       "git add"
     ]
