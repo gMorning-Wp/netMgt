@@ -10,7 +10,7 @@ import store from "./stores";
 import "styles/index.scss";
 
 //element3-plus
-import elementPlus from "plugins/elementPlus";. a 
+import elementPlus from "plugins/elementPlus";. a  a
 
 createApp(App)
   .use(router)
