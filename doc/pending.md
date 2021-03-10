@@ -1,0 +1,1 @@
+1. husky v4 版本在 node 14上不好使，降低到了node12上就好使了。等待官方husky的升级 再集成pre-commit的elint工作。
