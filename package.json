@@ -7,11 +7,9 @@
     "lint": "eslint --fix \"src/**/*.{js,vue}\"",
     "precommit": "lint-staged"
   },
-  {
-    "husky": {
-      "hooks": {
-        "pre-commit": "lint-staged",
-      }
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
     }
   },
   "lint-staged": {
