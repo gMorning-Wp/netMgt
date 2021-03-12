@@ -1,12 +1,5 @@
 <template>
   <div>
-    <HelloWorld msg="ddaadd"></HelloWorld>
+    <router-view></router-view>
   </div>
 </template>
-
-<script setup>
-// eslint-disable-next-line no-unused-vars
-import HelloWorld from "comps/HelloWorld.vue";
-</script>
-
-<style scoped></style>
