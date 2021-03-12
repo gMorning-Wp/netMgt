@@ -8,5 +8,17 @@
   "eslint.autoFixOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
-  }
+  },
+  "files.associations": { "*.vue": "vue" },
+  //不再对scss进行校验
+  "scss.validate": false,
+  "[vue]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  },
+  "files.associations": {
+    "*.js": "javascript",
+    "*.css": "css",
+    "*.vue": "vue"
+  },
+  "vetur.format.defaultFormatter.js": "prettier-eslint"
 }

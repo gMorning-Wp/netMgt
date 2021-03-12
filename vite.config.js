@@ -19,6 +19,8 @@ export default ({ command }) => {
         routes: path.resolve(__dirname, "src/routes"),
         styles: path.resolve(__dirname, "src/styles"),
         plugins: path.resolve(__dirname, "src/plugins"),
+        views: path.resolve(__dirname, "src/views"),
+        layouts: path.resolve(__dirname, "src/layouts"),
       },
     },
     plugins: [

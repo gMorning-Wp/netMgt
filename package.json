@@ -6,10 +6,10 @@
     "build": "cross-env NODE_ENV=production vite build",
     "lint": "eslint --fix \"src/**/*.{js,vue}\"",
     "prepare": "husky install",
-    "precommit":"lint-staged"
+    "precommit": "lint-staged"
   },
   "lint-staged": {
-    "src/**/*.{js,vue,css,json}": [
+    "src/**/*.{js,vue}": [
       "prettier --write",
       "eslint --fix",
       "git add"
@@ -18,7 +18,9 @@
   "dependencies": {
     "axios": "^0.21.1",
     "element-plus": "^1.0.2-beta.33",
+    "js-yaml": "^3.14.1",
     "mockjs": "^1.1.0",
+    "path-browserify": "^1.0.1",
     "vue": "^3.0.5",
     "vue-router": "^4.0.4",
     "vuex": "^4.0.0"
